@@ -1,6 +1,28 @@
 * NASM KULLANIMI
-nasm -f bin -o sector boot-sector.asm
-
+    -nasm -f bin -o sector boot-sector.asm
+    -nasm -f bin -o write-x boot-sector.asm
 *QEMU
-qemu sector
+    qemu-system-x86-64 sector
 
+* Adres
+    $ -> O anki adres
+    $$ -> baslangic adresi
+
+* 4 tane genel kullanımlık registerimiz var
+    -ax -> 16 bit  -> ah(8 bit),al(8 bit)
+    -bx
+    -cx
+    -dx
+
+    -eax -> 32 bit
+    -ebx
+    -ecx
+    -edx
+
+    -rax -> 64 bit
+    -rbx
+    -rcx
+    -rdx
+
+
+*Bios boot sectoru herzaman 0x7c00 adresine koyar.
