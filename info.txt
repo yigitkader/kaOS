@@ -1,0 +1,6 @@
+* NASM KULLANIMI
+nasm -f bin -o sector boot-sector.asm
+
+*QEMU
+qemu sector
+
